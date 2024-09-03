@@ -4,7 +4,9 @@ body {
     font-family: var(--mainFont);
     background-color: #eee;
 }
-
+.menu{
+    display: none;
+}
 .header {
     background-color: #fff;
     padding: 20px 0px;
@@ -51,3 +53,25 @@ font-weight: 700;;
 color: #fff;
 background-color: var(--mainColor);
 }
+
+/* media header */
+@media screen and (max-width:992px){
+    .nav{
+    display: none;    
+    }
+    .menu{
+        display: block;
+    }
+    .auth{
+        display: none;
+    }
+}
+    @media screen and (max-width:992px){
+        .container{
+            width: calc(100% - 50px);
+        }
+    }
+    .header .logo a{
+        font-size: 14px;
+    }
+
