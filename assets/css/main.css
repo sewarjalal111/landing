@@ -89,8 +89,46 @@ body {
 .header .logo a {
     font-size: 14px;
 }
-
-
+.testimonials{
+padding: 50px 0;
+background-color: #fff;
+}
+.testimonials .row{
+    gap: 40px;
+}
+.testimonial{
+box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+padding:20px;
+width:calc((100% - 40px)/2);
+box-sizing: border-box;
+}
+.user-info{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user-info img{
+    width: 40px;
+    height:40px ;
+    border-radius:50% ;
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+.rating{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+    .testimonial{
+        width: 100%;
+    }
+}
 .footer {
     background-color: #393E46;
     color: #fff;
